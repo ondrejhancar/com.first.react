@@ -1,0 +1,31 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "testVUC" : {
+        "realization" : "index.html",
+        "httpMethod" : "GET",
+        "type" : "VUC"
+      },
+      "home": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "withParams": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "defaultVuc": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "other": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      }
+    }
+  }
+}

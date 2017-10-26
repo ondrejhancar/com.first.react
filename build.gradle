@@ -1,0 +1,38 @@
+description 'Demo template project.' // TODO change to your project description
+
+allprojects {
+  group 'uu.demoappg01'       //TODO change to your project group name - {vendor}.{application}
+  version '0.1.0-SNAPSHOT'    //TODO change to your project version
+}
+
+defaultTasks 'uuRun'
+
+buildscript {
+  ext {
+    uuAppg01ServerVersion = "1.1.1"
+    uuProdRepository = 'https://repo.plus4u.net/repository/jars/'
+    uuBetaRepository = 'https://repo.plus4u.net/repository/jars-beta/'
+    gradlePluginsRepository = 'https://plugins.gradle.org/m2/'
+  }
+
+  repositories {
+    maven { url uuProdRepository }
+    maven { url uuBetaRepository }
+    maven { url gradlePluginsRepository }
+  }
+
+  dependencies {
+    classpath("com.sourcemuse.gradle.plugin:gradle-mongo-plugin:1.0.0")
+    classpath("uu.appg01:uu_appg01_gradle:${uuAppg01ServerVersion}")
+  }
+}
+
+ext {
+  // base package configuration for scanning
+  uuSubAppPackageName = "uu.demoapp.main"  //TODO change to your subapp package name
+
+  // Configuration of Nexus repositories for publishing output JARs
+  // TODO change to your nexus repository URL
+  uuDevReleaseRepository = 'https://repo.plus4u.net/repository/jars'
+  uuDevSprintRepository = 'https://repo.plus4u.net/repository/jars-sprint'
+}

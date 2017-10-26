@@ -1,0 +1,40 @@
+### IntelliJ
+.idea
+*.iws
+*.iml
+*.ipr
+**/out/
+
+### Gradle
+.gradle
+build/
+
+### Gradle wrapper
+gradlew
+gradlew.bat
+gradle/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# OIDC token
+oidc_token.json
+
+.tmp
+.history
+.vscode
+.project
+~*
+*.~*
+**/Gemfile.lock
+**/*.war
+**/node_modules
+**/dist
+**/public
+**/target
+**/cloud_config.json
+**/*log.*
+**/webapp
+package-lock.json
+uu_demoappg01_main-client/npm-debug.log
+uu_demoappg01_main-server/config/mapping.json
