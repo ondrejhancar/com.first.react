@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import DemoSpa from "./core/demo-spa.js";
+import View1 from "./first/view1.js";
 
 import "./index.less";
 
 export function render(targetElementId) {
   ReactDOM.render(
-    <DemoSpa />,
+    <View1 />,
     document.getElementById(targetElementId)
   );
 }
