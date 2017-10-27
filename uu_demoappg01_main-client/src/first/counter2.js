@@ -19,7 +19,7 @@ const Counter2 = createReactClass({
 
   //@@viewOn:statics
   statics: {
-    tagName: Cfg.APP + ".Counter",
+    tagName: Cfg.APP + ".Counter2",
     classNames: {
       main: Cfg.CSS + "-welcome-row",
       text: Cfg.CSS + "-welcome-row-text",

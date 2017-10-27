@@ -20,7 +20,7 @@ const Cars = createReactClass({
 
   //@@viewOn:statics
   statics: {
-    tagName: Cfg.APP + ".Car",
+    tagName: Cfg.APP + ".Cars",
     classNames: {
       main: Cfg.CSS + "-welcome-row",
       text: Cfg.CSS + "-welcome-row-text",
